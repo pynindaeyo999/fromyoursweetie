@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hint Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Click click 💟</h1>
+        <div class="hearts-container">
+            <div class="heart" onclick="showMessage(0)">🤍</div>
+            <div class="heart" onclick="showMessage(1)">💖</div>
+            <div class="heart" onclick="showMessage(2)">🩷</div>
+        </div>
+        <p id="hint-message"></p>
+        <button id="next-button" onclick="goToNextPage()" style="display: none;">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
