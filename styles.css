@@ -30,3 +30,204 @@ button {
 button:hover {
     background-color: #ff3333;
 }
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options button {
+    background-color: #ff8080;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.options button:hover {
+    background-color: #ff4d4d;
+}
+.hearts-container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    animation: float 3s infinite ease-in-out;
+}
+
+.heart:nth-child(1) { top: 20%; left: 30%; animation-delay: 0s; }
+.heart:nth-child(2) { top: 30%; left: 40%; animation-delay: 0.5s; }
+.heart:nth-child(3) { top: 70%; left: 40%; animation-delay: 1s; }
+.heart:nth-child(4) { top: 65%; left: 10%; animation-delay: 0s; }
+.heart:nth-child(5) { top: 50%; left: 50%; animation-delay: 0.5s; }
+.heart:nth-child(6) { top: 90%; left: 10%; animation-delay: 1s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+h1 {
+    min-height: 50px;  /* Keeps the header height stable */
+    min-width: 300px;  /* Ensures the width stays consistent */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#hint-message {
+    width: 400px;  /* Fixed width */
+    min-height: 50px;  /* Keeps frame stable */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto 0;  /* Centers it */
+    transition: opacity 0.3s ease-in-out;
+    word-wrap: break-word;  /* Allows text to wrap properly */
+    overflow: hidden;
+}
+/* Style for the transition page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+    color: #ff69b4; /* Pink color */
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff1493; /* Pink color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff66b2; /* Lighter pink */
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container to hold the content */
+.container {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Gift emoji in the center */
+.gift-emoji {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+/* Delivery Status text */
+.delivery-status h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Progress bar container */
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress inside the bar */
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+/* Truck emoji at the end of the progress bar */
+.truck {
+    position: absolute;
+    right: 0px; /* Align it at the far right */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    /* Remove the animation to keep the truck at the end */
+}
+
+/* Light effect running from left to right */
+.light {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    animation: lightEffect 2s linear infinite;
+}
+
+/* Animations */
+@keyframes moveTruck {
+    0% {
+        left: -30px;
+    }
+    50% {
+        left: 65%; /* Move truck emoji based on 65% progress */
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes lightEffect {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
