@@ -7,11 +7,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 500px;
-    width: 500px
+    width: 500px;
     margin: 0;
 }
-
-.container {
+container {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -230,5 +229,49 @@ body {
     }
     100% {
         left: 100%;
+    }
+}
+/* Gift Transition Page Styling */
+
+.gift-transition {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gift-transition h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lets-go-btn {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.lets-go-btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
