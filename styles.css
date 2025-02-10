@@ -1,53 +1,72 @@
 
+/* Global Styles */
 body {
-    text-align: center;
-    font-family: Jersey-10;
-    background-color: #ffc7dd;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #ffb7e2, #ffd3c7,#ffe4f9, #efb5ff);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
-    margin: 0;
+    height: 100vh;
+    text-align: center;
+    font-size: 20px;
+    color: #c378d8;
 }
-container {
-    background: white;
+
+.container {
+    width: 80%;
+    max-width: 600px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
 }
 
 button {
-    background-color: #ff4d4d;
+    background-color: #ff8bc5;
+    font-family: 'Jersey-10', sans-serif;
     color: white;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 12px 24px;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #ff3333;
+    background-color: #ff1493;
+    transform: scale(1.1);
 }
+
 .options {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
 
 .options button {
-    background-color: #ff8080;
+    background-color: #e3b3ff;
     color: white;
+    width: 300px;
     padding: 10px;
     border: none;
+
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 .options button:hover {
-    background-color: #ff4d4d;
+    background-color: #d58cff;
 }
 .hearts-container {
     position: relative;
@@ -65,12 +84,12 @@ button:hover {
     animation: float 3s infinite ease-in-out;
 }
 
-.heart:nth-child(1) { top: 20%; left: 30%; animation-delay: 0s; }
-.heart:nth-child(2) { top: 30%; left: 40%; animation-delay: 0.5s; }
-.heart:nth-child(3) { top: 70%; left: 40%; animation-delay: 1s; }
-.heart:nth-child(4) { top: 65%; left: 10%; animation-delay: 0s; }
-.heart:nth-child(5) { top: 50%; left: 50%; animation-delay: 0.5s; }
-.heart:nth-child(6) { top: 90%; left: 10%; animation-delay: 1s; }
+.heart:nth-child(1) { top: 30%; left: 20%; animation-delay: 0.5s; }
+.heart:nth-child(2) { top: 20%; left: 60%; animation-delay: 1.5s; }
+.heart:nth-child(3) { top: 45%; left: 40%; animation-delay: 0.5s; }
+.heart:nth-child(4) { top: 70%; left: 15%; animation-delay: 0s; }
+.heart:nth-child(5) { top: 60%; left: 70%; animation-delay: 1.5s; }
+.heart:nth-child(6) { top: 80%; left: 52%; animation-delay: 1s; }
 
 @keyframes float {
     0% { transform: translateY(0); }
@@ -87,17 +106,14 @@ h1 {
     margin: 0 auto;
 }
 #hint-message {
-    width: 400px;  /* Fixed width */
-    min-height: 50px;  /* Keeps frame stable */
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
+    color: rgba(214, 138, 224, 0.8);
     margin: 20px auto 0;  /* Centers it */
     transition: opacity 0.3s ease-in-out;
     word-wrap: break-word;  /* Allows text to wrap properly */
@@ -105,7 +121,7 @@ h1 {
 }
 /* Style for the transition page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,50 +149,6 @@ button {
 button:hover {
     background-color: #ff66b2; /* Lighter pink */
 }
-
-/* Basic styling for the page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-/* Container to hold the content */
-.container {
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Gift emoji in the center */
-.gift-emoji {
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-
-/* Delivery Status text */
-.delivery-status h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Progress bar container */
-.progress-bar {
-    width: 100%;
-    height: 30px;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Progress inside the bar */
 .progress {
     height: 100%;
