@@ -1,12 +1,13 @@
 
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffe6e6;
+    font-family: Jersey-10;
+    background-color: #ffc7dd;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 500px;
+    width: 500px
     margin: 0;
 }
 
