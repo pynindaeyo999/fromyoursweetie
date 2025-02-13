@@ -28,4 +28,207 @@ h1, h2{
 }
 
 button {
-    background-
+    background-color: #ff8ec7;
+    font-family: 'Jersey-10', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.options button {
+    background-color: #e3b3ff;
+    font-family: 'Jersey-10', sans-serif;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.options button:hover {
+    background-color: #d58cff;
+}
+.hearts-container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    animation: float 3s infinite ease-in-out;
+}
+
+.heart:nth-child(1) { top: 30%; left: 30%; animation-delay: 0.5s; }
+.heart:nth-child(2) { top: 20%; left: 70%; animation-delay: 1s; }
+.heart:nth-child(3) { top: 45%; left: 50%; animation-delay: 0.5s; }
+.heart:nth-child(4) { top: 70%; left: 15%; animation-delay: 0s; }
+.heart:nth-child(5) { top: 60%; left: 80%; animation-delay: 1s; }
+.heart:nth-child(6) { top: 80%; left: 52%; animation-delay: 0.7s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+h1 {
+    min-height: 50px;  /* Keeps the header height stable */
+    min-width: 300px;  /* Ensures the width stays consistent */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#message-box {
+    font-family: 'Jersey 10', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(214, 138, 224, 0.8);
+    margin: 20px auto 0;  /* Centers it */
+    transition: opacity 0.3s ease-in-out;
+    word-wrap: break-word;  /* Allows text to wrap properly */
+    overflow: hidden;
+}
+/* Style for the transition page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+    color: #ff69b4; /* Pink color */
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #fff3a1;
+    color: rgb(204, 146, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffabd5; /* Lighter pink */
+}
+/* Progress inside the bar */
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+/* Truck emoji at the end of the progress bar */
+.truck {
+    position: absolute;
+    right: 0px; /* Align it at the far right */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    /* Remove the animation to keep the truck at the end */
+}
+
+/* Light effect running from left to right */
+.light {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    animation: lightEffect 2s linear infinite;
+}
+@keyframes lightEffect {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+/* Gift Transition Page Styling */
+
+.gift-transition {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gift-transition h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lets-go-btn {
+    background-color: #fff1aa;
+    color: #e189ff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.lets-go-btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
