@@ -20,12 +20,12 @@ function showMessage(index) {
     if (revealed === messages.length) {
         document.getElementById("next-button").style.display = "block";
         document.getElementById("next-button").addEventListener("click", function() {
-            window.location.href = "hint.html";  // This should link to the transition page
+            window.location.href = "hint1.html";  // This should link to the transition page
         });
         
     }
-function goToNextPage() {
-        window.location.href = "hint.html"; // Ensure this matches the actual filename
+    function goToNextPage() {
+        window.location.href = "hint1.html"; // Ensure this matches the actual filename
     }
     
 }
