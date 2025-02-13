@@ -11,4 +11,27 @@
     <div class="container">
         <h1>How long have we been together? ❤️</h1>
         <div class="options">
-            <button onclick="checkAnswer(1)">1,000 years</bu
+            <button onclick="checkAnswer(1)">1,000 years</button>
+            <button onclick="checkAnswer(2)">100 years</button>
+            <button onclick="checkAnswer(3)">3 light years</button>
+            <button onclick="checkAnswer(4)">3 years</button>
+        </div>
+        <p id="feedback"></p>
+    </div>
+
+    <script>
+        function checkAnswer(choice) {
+            if (choice === 4) 
+        </div>
+            else {
+                let funnyImages = {
+                    1: 'funny1.jpg',
+                    2: 'funny2.jpg',
+                    3: 'funny3.jpg'
+                };
+                document.getElementById('feedback').innerHTML = `<img src='${funnyImages[choice]}' alt='Wrong Answer' width='200px'><br>Try Again!`;
+            }
+        }
+    </script>
+</body>
+</html>
