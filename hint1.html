@@ -8,14 +8,46 @@
 <body>
     <div class="container">
         <h1>Click click 💟</h1>
+
+        <!-- Only one message-box div -->
         <div id="message-box"></div>
+
         <div class="hearts-container">
+            <!-- Each heart is clickable, and the index is passed to showMessage() -->
             <div class="heart" onclick="showMessage(0)">🤍</div>
             <div class="heart" onclick="showMessage(1)">💘</div>
-            <div class="heart" onclick="showMessage(1)">💌</div>
-            <div class="heart" onclick="showMessage(2)">🌈</div>
-            <div class="heart" onclick="showMessage(3)">⭐️</div>
+            <div class="heart" onclick="showMessage(2)">💌</div>
+            <div class="heart" onclick="showMessage(3)">🌈</div>
+            <div class="heart" onclick="showMessage(4)">⭐️</div>
         </div>
-        <div id="message-box"></div>
+
+        <!-- Button to go to the next page -->
         <button id="next-button" onclick="goToNextPage()" style="display: none;">Go go</button>
+    </div>
+
+    <script>
+        // Array of messages to show when hearts are clicked
+        const messages = [
+            "Thanks for always be by my side and put up with me 💕",
+            "Appreciated everything you did for me, you're the best! 🥰",
+            "Let's grow older and wiser together for a long long time.",
+            "Happy Valentine's Day babi 🤪",
+            "You just made Valentine seems normal when you give me lots of love everyday",
+            "Love you loadsss 💖"
+        ];
+
+        // Function to show the message when a heart is clicked
+        function showMessage(index) {
+            // Set the message in the message-box
+            document.getElementById('message-box').innerText = messages[index];
+
+            // Show the next button
+            document.getElementById('next-button').style.display = 'block';
+        }
+
+        // Function to navigate to transition.html
+        function goToNextPage() {
+            window.location.href = "transition.html";  // Redirect to transition.html
+        }
+    </script>
 </body>
