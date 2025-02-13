@@ -8,4 +8,97 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Open+Sans&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <meta name="viewport
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Status!</title>
+        <style>
+            /* Include the full CSS here for testing */
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #ffb7e2, #ffd3c7,#ffe4f9, #efb5ff);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+            }
+            .container {
+                width: 80%;
+                max-width: 600px;
+            }
+            .emoji {
+                font-size: 100px;
+                margin-bottom: 20px;
+            }
+            .delivery-status h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .truck {
+                position: absolute;
+                right: -10px; /* Align it at the far right */
+                top: 50%;
+                transform: translateY(-50%) scaleX(-1);
+                font-size: 40px;
+            }
+            .progress-bar {
+                width: 100%;
+                height: 30px;
+                background-color: #fff0d1;
+                border-radius: 15px;
+                position: relative;
+                overflow: hidden;
+                margin-top: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .progress {
+                height: 100%;
+                background-color: #4caf50;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 10px;
+                border-radius: 15px;
+            }
+            .light {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(255, 236, 127, 0.7), rgba(255, 255, 255, 0));
+                animation: lightEffect 3s linear infinite;
+            }
+            @keyframes lightEffect {
+                0% { left: -100%; }
+                100% { left: 100%; }
+            }
+        </style>
+    </head>    
+</head>
+<body>
+    <div class="container">
+        <!-- Emoji in the center -->
+        <div class="emoji">
+            🩷🎁✨
+        </div>
+
+        <!-- Delivery Status -->
+        <div class="delivery-status">
+            <h2>Delivery Status: Gift is on the way!</h2>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%;"> <!-- Set 65% progress -->
+                    <div class="truck">🚚</div> <!-- Cargo truck emoji -->
+                </div>
+                <div class="light"></div> <!-- Light effect -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
