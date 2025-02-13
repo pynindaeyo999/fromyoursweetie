@@ -104,7 +104,7 @@ h1 {
     justify-content: center;
     margin: 0 auto;
 }
-#hint-message {
+#message-box {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     display: flex;
